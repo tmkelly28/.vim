@@ -169,8 +169,6 @@ vnoremap <S-Tab> <
 vmap <C-m> gc
 " Disable tComment to escape some entities
 let g:tcomment#replacements_xml={}
-" Copy to system clipboard
-vnoremap <C-c> :w !pbcopy<cr>
 " Undo, Redo
 nnoremap <C-z>  :undo<CR>
 inoremap <C-z>  <Esc>:undo<CR>
@@ -202,8 +200,13 @@ if &term =~ "xterm.*"
     cmap <Esc>[201~ <nop>
 endif
 
+" Copy to system clipboard
+vnoremap <C-c> :w !pbcopy<cr>
+
 " Paste from register 0
-nnoremap p "0p
+" Sometimes when I use x to remove things, I still want to paste
+" whatever I yank'd previously
+nnoremap <leader>p "0p
 
 " Move lines up or down
 execute "set <M-j>=∆"

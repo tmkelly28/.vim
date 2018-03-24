@@ -1,5 +1,6 @@
 # Packages
 * YouCompleteMe
+* ale
 * auto-pairs
 * colorschemes
 * ctrlp.vim

@@ -5,6 +5,7 @@
 * colorschemes
 * ctrlp.vim
 * delimitMate
+* elm-vim
 * iceberg.vim
 * javascript-libraries-syntax.vim
 * nerdtree

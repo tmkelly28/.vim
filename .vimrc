@@ -137,7 +137,7 @@ nnoremap <leader>' :%s/"/'/g
 
 " Navigate between buffers
 nnoremap <Leader>l :bnext<CR>
-nnoremap <Leader>b :bprevious<CR>
+nnoremap <Leader>h :bprevious<CR>
 " Close buffers with vim-bbye
 :nnoremap <Leader>q :Bdelete<CR>
 " Close all open buffers with vim-bbye
@@ -209,14 +209,14 @@ vnoremap <C-c> :w !pbcopy<cr>
 nnoremap <leader>p "0p
 
 " Move lines up or down
-execute "set <M-j>=∆"
-execute "set <M-k>=˚"
-nnoremap <M-j> :m .+1<CR>==
-nnoremap <M-k> :m .-2<CR>==
-inoremap <A-j> <Esc>:m .+1<CR>==gi
-inoremap <A-k> <Esc>:m .-2<CR>==gi
-vnoremap <A-j> :m '>+1<CR>gv=gv
-vnoremap <A-k> :m '<-2<CR>gv=gv
+" execute "set <M-j>=∆"
+" execute "set <M-k>=˚"
+nnoremap <C-j> :m .+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
+" inoremap <A-j> <Esc>:m .+1<CR>==gi
+" inoremap <A-k> <Esc>:m .-2<CR>==gi
+" vnoremap <A-j> :m '>+1<CR>gv=gv
+" vnoremap <A-k> :m '<-2<CR>gv=gv
 
 """
 """ Searching

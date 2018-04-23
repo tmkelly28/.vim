@@ -18,7 +18,6 @@
 * vim-css-color
 * vim-gitgutter
 * vim-javascript
-* vim-js-pretty-template
 * vim-jsx
 * vim-markdown
 * vim-multiple-cursors
